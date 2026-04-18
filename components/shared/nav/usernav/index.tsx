@@ -11,7 +11,7 @@ function UserNav() {
                 <ShoppingCart /> Cart
             </Link>
         </Button>
-        <Button asChild variant='ghost' size='sm'>
+        <Button asChild size='sm'>
             <Link href="/login">
                 <User /> Login
             </Link>
