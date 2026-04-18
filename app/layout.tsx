@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/assets/styles/globals.css";
-import { NEXT_APP_DESCRIPTION, NEXT_APP_TITLE } from "@/libs/constants";
+import { APP_DESCRIPTION, APP_SERVER_URL, APP_TITLE } from "@/lib/constants";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: {
-    default: NEXT_APP_TITLE,
-    template: `%s | ${NEXT_APP_TITLE}`,
+    default: APP_TITLE,
+    template: `%s | ${APP_TITLE}`,
   },
-  description: NEXT_APP_DESCRIPTION,
+  description: APP_DESCRIPTION,
+  metadataBase: new URL(APP_SERVER_URL),
 };
 
 export default function RootLayout({
