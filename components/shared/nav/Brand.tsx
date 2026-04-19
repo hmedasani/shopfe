@@ -5,8 +5,8 @@ import React from 'react'
 
 function Brand() {
   return (
-    <Link href="/" className='text-xl font-bold flex flex-row items-center gap-2'>
-        <Image src={"images/logo.svg"} alt={`${APP_TITLE}`} width={32} height={32} priority={true} />
+    <Link href="/" className='text-xl font-bold flex flex-row items-center text-yellow-600'>
+        {/* <Image src={"images/logo.svg"} alt={`${APP_TITLE}`} width={32} height={32} priority={true} /> */}
         <span className='hidden md:block'>{APP_TITLE}</span>
     </Link>
   )

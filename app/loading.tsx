@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Loader from "@/assets/loader.gif";
+import Brand from "@/components/shared/nav/Brand";
 
 function LoadingPage() {
   return (
@@ -28,6 +29,11 @@ function LoadingPage() {
 
       {/* === Content (No Box) === */}
       <div className="flex flex-col items-center gap-6 z-10">
+
+        {/* Brand */}
+        <motion.div className="flex justify-center">
+          <Brand />
+        </motion.div>
 
         {/* Spinner Ring */}
         <motion.div
