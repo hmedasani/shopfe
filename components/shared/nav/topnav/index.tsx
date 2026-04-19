@@ -2,7 +2,7 @@ import React from 'react'
 
 function TopNav() {
   return (
-    <nav>TopNav</nav>
+    <nav className='flex flex-row'>TopNav</nav>
   )
 }
 
