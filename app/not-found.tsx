@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Brand from "@/components/shared/nav/Brand";
+import Brand from "@/components/shared/Brand";
 
 const container = {
   hidden: { opacity: 0 },

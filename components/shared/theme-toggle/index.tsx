@@ -11,6 +11,7 @@ import { DropdownMenu,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { MoonIcon, SunIcon, Laptop2Icon } from 'lucide-react';
+import { themeToggle } from '@/lib/static/english/theme-toggle';
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -33,15 +34,16 @@ function ThemeToggle() {
       <DropdownMenuContent className='min-w-40'>
         <DropdownMenuLabel>Choose Theme</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuCheckboxItem checked={theme === "light"} onSelect={() => setTheme("light")}>
-          <SunIcon className='me-2' /> Light
-        </DropdownMenuCheckboxItem>
-        <DropdownMenuCheckboxItem checked={theme === "dark"} onSelect={() => setTheme("dark")}>
-          <MoonIcon className='me-2' /> Dark
-        </DropdownMenuCheckboxItem>
-        <DropdownMenuCheckboxItem checked={theme === "system"} onSelect={() => setTheme("system")}>
-          <Laptop2Icon className='me-2' /> System
-        </DropdownMenuCheckboxItem>
+        {themeToggle.map((item) => (
+          <DropdownMenuCheckboxItem
+            key={item.value}
+            checked={theme === item.value}
+            onCheckedChange={() => setTheme(item.value)}
+          >
+            {item.icon && <item.icon className="mr-2 h-4 w-4" />}
+            {item.label}
+          </DropdownMenuCheckboxItem>
+        ))}
       </DropdownMenuContent>
     </DropdownMenu>
   )

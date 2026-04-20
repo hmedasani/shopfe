@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Loader from "@/assets/loader.gif";
-import Brand from "@/components/shared/nav/Brand";
+import Brand from "@/components/shared/Brand";
 
 function LoadingPage() {
   return (

@@ -1,20 +1,21 @@
 import React from 'react'
-import Brand from '../nav/Brand'
+import Brand from '../Brand'
 import TopNav from '../nav/topnav'
-import UserNav from '../nav/usernav'
-import ThemeToggle from './theme-toggle'
-import TopSearch from '../search/topsearch'
+import Menu from '../menu'
+import SearchAll from '../search/search-all'
+
 
 function Header() {
   return (
     <header className='flex justify-between border-b p-4'>
         <Brand />
         <div className="flex flex-row flex-1 gap-4 px-4">
-          <TopSearch />
+          <SearchAll />
+          <div className="hidden md:block">
           <TopNav />
+          </div>
         </div>
-          <ThemeToggle />
-        <UserNav />
+        <Menu />
     </header>
   )
 }
