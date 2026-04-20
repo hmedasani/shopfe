@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import FormatNavList from '../format-navlist'
-import { topNav } from '@/lib/static/english/navlist'
+import { topNav } from '@/lib/static-data/english/navlist'
 
 function TopNav() {
   return (

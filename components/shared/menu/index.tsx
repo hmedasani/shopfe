@@ -1,9 +1,8 @@
 import React from 'react'
-import TopSearch from '../search/search-all'
 import TopNav from '../nav/topnav'
 import ThemeToggle from '../theme-toggle'
 import UserNav from '../nav/usernav'
-import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
 import { EllipsisVertical, MenuIcon } from 'lucide-react'
 
 function Menu() {

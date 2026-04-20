@@ -2,7 +2,7 @@ import React from 'react'
 import {ShoppingCart, User} from "lucide-react"
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { userNav } from '@/lib/static/english/navlist'
+import { userNav } from '@/lib/static-data/english/navlist'
 
 function UserNav() {
 

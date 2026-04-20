@@ -11,7 +11,7 @@ import { DropdownMenu,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { MoonIcon, SunIcon, Laptop2Icon } from 'lucide-react';
-import { themeToggle } from '@/lib/static/english/theme-toggle';
+import { themeToggle } from '@/lib/static-data/english/theme-toggle';
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();
