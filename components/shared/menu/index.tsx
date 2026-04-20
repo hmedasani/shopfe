@@ -1,9 +1,8 @@
+"client"
 import React from 'react'
-import TopNav from '../nav/topnav'
 import ThemeToggle from '../theme-toggle'
 import UserNav from '../nav/usernav'
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
-import { EllipsisVertical, MenuIcon } from 'lucide-react'
+import SheetRight from './sheet-right'
 
 function Menu() {
   return (
@@ -13,28 +12,7 @@ function Menu() {
             <UserNav />
         </nav>
         <nav className='flex md:hidden w-full max-w-xs gap-1'>
-            <Sheet>
-                <SheetTrigger className='align-middle'>
-                    <button className='p-2 rounded-md bg-gray-200 dark:bg-gray-700'>
-                        <EllipsisVertical size={20} />
-                    </button>
-                </SheetTrigger>
-                <SheetContent side='right' className='w-64'>
-                    <SheetHeader>
-                        <div className='flex items-center gap-2'>
-                            <MenuIcon size={20} />
-                            <span className='text-lg font-semibold'>Menu</span>
-                        </div>
-                    </SheetHeader>
-                    <div className='flex flex-col gap-4'>
-                        <div className="flex flex-row border-b border-t flex-end pt-6 pb-4 px-2">
-                            <ThemeToggle />
-                            <UserNav />
-                        </div>
-                        <TopNav />
-                    </div>
-                </SheetContent>
-            </Sheet>
+            <SheetRight />
         </nav>
     </div>
   )

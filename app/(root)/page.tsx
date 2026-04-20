@@ -1,7 +1,10 @@
-import { Button } from '@/components/ui/button'
-import { delay } from '@/utils'
-import { Metadata } from 'next'
 import React from 'react'
+import { Button } from '@/components/ui/button'
+import { Metadata } from 'next'
+
+import sampleData from '@/db/sample-data'
+import ProductList from '@/components/shared/product/product-list'
+
 
 export const metadata: Metadata = {
   title: "Home",
@@ -9,11 +12,11 @@ export const metadata: Metadata = {
 
 async function HomePage() {
 
-  await delay(2000);
+  console.log(sampleData);
 
   return (
-    <div>
-      <Button>Hello Button</Button>
+    <div className='p-4'>
+      <ProductList data={sampleData.products} title="Featured Products" limit={4} />
     </div>
   )
 }
