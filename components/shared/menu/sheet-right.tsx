@@ -10,7 +10,7 @@ function SheetRight() {
   return (
     <Sheet>
         <SheetTrigger className='align-middle'>
-            <span className='p-2 rounded-md bg-gray-200 dark:bg-gray-700'>
+            <span className='flex p-2 rounded-md bg-gray-200 dark:bg-gray-700'>
                 <EllipsisVertical size={20} />
             </span>
         </SheetTrigger>
