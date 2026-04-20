@@ -55,13 +55,13 @@ function NotFoundPage() {
       >
         
         {/* Logo */}
-        <motion.div variants={item} className="flex justify-center">
+        <motion.div variants={container} className="flex justify-center">
           <Brand />
         </motion.div>      
 
         {/* 404 */}
         <motion.h1
-          variants={item}
+          variants={container}
           className="text-6xl md:text-8xl font-extrabold tracking-tight text-primary"
         >
           404
@@ -69,7 +69,7 @@ function NotFoundPage() {
 
         {/* Title */}
         <motion.h2
-          variants={item}
+          variants={container}
           className="text-2xl md:text-3xl font-semibold"
         >
           Page not found
@@ -77,7 +77,7 @@ function NotFoundPage() {
 
         {/* Description */}
         <motion.p
-          variants={item}
+          variants={container}
           className="text-muted-foreground"
         >
           Sorry, we couldn’t find the page you’re looking for. It might have been removed,
@@ -86,7 +86,7 @@ function NotFoundPage() {
 
         {/* Buttons */}
         <motion.div
-          variants={item}
+          variants={container}
           className="flex flex-col sm:flex-row gap-4 justify-center pt-4"
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
